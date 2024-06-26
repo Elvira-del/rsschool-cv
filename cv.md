@@ -13,6 +13,35 @@
 - Git
 - Figma
 
+## Code examples
+
+```
+ function sortArray(array) {
+  const sortedResultArr = [];
+  const oddArr = [];  
+  let idxElemOdd = 0;
+  
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 !== 0) {
+      oddArr.push(array[i]);
+    }
+  }  
+  
+  const sortedOddArr = oddArr.sort((a, b) => a - b);  
+  
+  for (let j = 0; j < array.length; j++) {
+    if (array[j] % 2 !== 0) {
+      sortedResultArr.push(sortedOddArr[idxElemOdd]);
+      idxElemOdd += 1;
+    } else {
+      sortedResultArr.push(array[j]);
+    }
+  }  
+  
+  return sortedResultArr;
+}
+```
+
 ## Experience
 
 - Pet-project - [Glassmorphism Sign In/Sign Up form](https://form-kappa-eight.vercel.app/) (Next.js, TypeScript, Auth.js, CSS Modules, Zod)
