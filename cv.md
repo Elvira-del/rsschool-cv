@@ -27,3 +27,8 @@
   - The Rolling Scopes, JS/FE Pre-School 2022Q2
 - Skillbox
   - Frontend Developer Profession from Zero to PRO
+
+## Languages
+
+- Russian - Native
+- English - A2
