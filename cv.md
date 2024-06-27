@@ -13,13 +13,9 @@ I am drawn to web development because it offers limitless opportunities for prof
 
 ## Skills
 
-- React
-- TypeScript
-- JavaScript
-- HTML
-- CSS
-- Git
-- Figma
+- HTML, CSS, JavaScript Basics
+- React, TypeScript Basics
+- Git, Figma
 
 ## Code examples
 
