@@ -2,8 +2,8 @@
 
 ## Contacts
 
-- [LinkedIn](www.linkedin.com/in/elvira-krutova-43a01428a)
-- [Telegram]([@krasnoe_soInce](https://t.me/krasnoe_soInce))
+- [LinkedIn](https://www.linkedin.com/in/elvira-krutova-43a01428a/)
+- [Telegram](https://t.me/krasnoe_soInce)
 
 ## Summary
 
