@@ -3,12 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
     <main>
       <div class="container">
-        <section class="contacts">
+        <section class="section profile">
+          <div class="content-wrap profile__content">
+            <img
+              class="profile__avatar"
+              src="./assets/avatar.jpg"
+              alt="Profile avatar"
+            />
+            <h1 class="profile__title">Elvira Krutova</h1>
+            <h3 class="profile__subtitle">Front-end developer</h3>
+          </div>
+        </section>
+        <section class="section contacts">
           <div class="content-wrap contacts__content">
             <h2 class="contacts__title">Contacts</h2>
             <ul class="contacts__list">
@@ -39,7 +51,7 @@
             </ul>
           </div>
         </section>
-        <section class="summary">
+        <section class="section summary">
           <div class="content-wrap summary__content">
             <h2 class="summary__title">Summary</h2>
             <p class="summary__text">
@@ -56,7 +68,7 @@
             </p>
           </div>
         </section>
-        <section class="skills">
+        <section class="section skills">
           <div class="content-wrap skills__content">
             <h2 class="skills__title">Skills</h2>
             <ul class="skills__list">
@@ -66,7 +78,35 @@
             </ul>
           </div>
         </section>
-        <section class="experience">
+        <section class="section code">
+          <div class="content-wrap code__content">
+            <h2 class="code__title">Code examples</h2>
+            <pre><code class="code__text">function sortArray(array) {
+  const sortedResultArr = [];
+  const oddArr = [];  
+  let idxElemOdd = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 !== 0) {
+      oddArr.push(array[i]);
+    }
+  }  
+
+  const sortedOddArr = oddArr.sort((a, b) => a - b);  
+
+  for (let j = 0; j < array.length; j++) {
+    if (array[j] % 2 !== 0) {
+      sortedResultArr.push(sortedOddArr[idxElemOdd]);
+      idxElemOdd += 1;
+    } else {
+      sortedResultArr.push(array[j]);
+    }
+  }
+  return sortedResultArr;
+}</code></pre>
+          </div>
+        </section>
+        <section class="section experience">
           <div class="content-wrap experience__content">
             <h2 class="experience__title">Experience</h2>
             <ul class="experience__list">
@@ -112,7 +152,7 @@
             </ul>
           </div>
         </section>
-        <section class="education">
+        <section class="section education">
           <div class="content-wrap education__content">
             <h2 class="education__title">Education</h2>
             <ul class="education__list">
@@ -143,7 +183,7 @@
             </ul>
           </div>
         </section>
-        <section class="languages">
+        <section class="section languages">
           <div class="content-wrap languages__content">
             <h2 class="languages__title">Languages</h2>
             <ul class="languages__list">
