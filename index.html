@@ -1,9 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__container">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#skills">Skills</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#experience">Experience</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#education">Education</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section profile">
+          <div class="content-wrap profile__content">
+            <img
+              class="profile__avatar"
+              src="./assets/avatar.jpg"
+              alt="Profile avatar"
+              width="100"
+              height="100"
+            />
+            <div class="profile__description">
+              <h1 class="profile__title">Elvira Krutova</h1>
+              <h3 class="profile__subtitle">Front-end developer</h3>
+            </div>
+          </div>
+        </section>
+        <section class="section contacts">
+          <div class="content-wrap contacts__content">
+            <h2 class="contacts__title">Contacts</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <span>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://icons8.com/icon/63777/github"
+                    title="GitHub icon by Icons8"
+                  >
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use
+                        xlink:href="./assets/icon/sprite.svg#icons8-github"
+                      ></use>
+                    </svg>
+                  </a>
+                </span>
+
+                <a class="contacts__link" href="https://github.com/Elvira-del">
+                  GitHub
+                </a>
+              </li>
+              <li class="contacts__item">
+                <span>
+                  <a
+                    target="_blank"
+                    href="https://icons8.com/icon/13930/linkedin"
+                    rel="noopener noreferrer"
+                    title="LinkedIn icon by Icons8"
+                  >
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use
+                        xlink:href="./assets/icon/sprite.svg#icons8-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </span>
+
+                <a
+                  href="https://www.linkedin.com/in/elvira-krutova-43a01428a/"
+                  class="contacts__link"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li class="contacts__item">
+                <span>
+                  <a
+                    target="_blank"
+                    href="https://icons8.com/icon/63306/telegram-app"
+                    rel="noopener noreferrer"
+                    title="Telegram App icon by Icons8"
+                  >
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use
+                        xlink:href="./assets/icon/sprite.svg#icons8-telegram-app"
+                      ></use>
+                    </svg>
+                  </a>
+                </span>
+
+                <a href="https://t.me/krasnoe_soInce" class="contacts__link">
+                  Telegram
+                </a>
+              </li>
+              <li class="contacts__item">
+                <span>
+                  <a
+                    target="_blank"
+                    href="https://icons8.com/icon/65646/discord-bubble"
+                    rel="noopener noreferrer"
+                    title="Discord icon by Icons8"
+                  >
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use
+                        xlink:href="./assets/icon/sprite.svg#icons8-discord"
+                      ></use>
+                    </svg>
+                  </a>
+                </span>
+
+                <a
+                  href="https://discord.com/users/534015331098951690"
+                  class="contacts__link"
+                >
+                  Discord
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section summary">
+          <div class="content-wrap summary__content">
+            <h2 class="summary__title">Summary</h2>
+            <p class="summary__text">
+              I am a passionate and motivated novice front-end developer eager
+              to gain real-world experience in the industry. While I don’t have
+              any commercial development experience, I have spent countless
+              hours self-learning and experimenting with various web
+              technologies.<br />
+              I am drawn to web development because it offers limitless
+              opportunities for professional growth and the chance to be part of
+              a vast and supportive developer community. I also appreciate that
+              front-end development allows me to work on many elements that we
+              encounter daily on computer and mobile device screens.
+            </p>
+          </div>
+        </section>
+        <section class="section skills" id="skills">
+          <div class="content-wrap skills__content">
+            <h2 class="skills__title">Skills</h2>
+            <ul class="skills__list">
+              <li class="skills__item">HTML, CSS, JavaScript Basics</li>
+              <li class="skills__item">React, TypeScript Basics</li>
+              <li class="skills__item">Git, Figma</li>
+            </ul>
+          </div>
+        </section>
+        <section class="section code">
+          <div class="content-wrap code__content">
+            <h2 class="code__title">Code examples</h2>
+            <pre><code class="code__text">function sortArray(array) {
+  const sortedResultArr = [];
+  const oddArr = [];  
+  let idxElemOdd = 0;
+
+  for (let i = 0; i &lt; array.length; i++) {
+    if (array[i] % 2 !== 0) {
+      oddArr.push(array[i]);
+    }
+  }  
+
+  const sortedOddArr = oddArr.sort((a, b) =&gt; a - b);  
+
+  for (let j = 0; j &lt; array.length; j++) {
+    if (array[j] % 2 !== 0) {
+      sortedResultArr.push(sortedOddArr[idxElemOdd]);
+      idxElemOdd += 1;
+    } else {
+      sortedResultArr.push(array[j]);
+    }
+  }
+  return sortedResultArr;
+}</code></pre>
+          </div>
+        </section>
+        <section class="section experience" id="experience">
+          <div class="content-wrap experience__content">
+            <h2 class="experience__title">Experience</h2>
+            <ul class="experience__list">
+              <li class="experience__item">
+                <a
+                  href="https://form-kappa-eight.vercel.app/"
+                  class="experience__link"
+                  >Glassmorphism Sign In/Sign Up form</a
+                >
+                <ul class="experience__description">
+                  <li class="experience__text">Pet-project.</li>
+                  <li class="experience__text">
+                    Stack: Next.js, TypeScript, Auth.js, CSS Modules, Zod.
+                  </li>
+                </ul>
+              </li>
+              <li class="experience__item">
+                <a
+                  href="https://elvira-del.github.io/todo/"
+                  class="experience__link"
+                  >ToDo list</a
+                >
+                <ul class="experience__description">
+                  <li class="experience__text">Pet-project.</li>
+                  <li class="experience__text">
+                    Stack: React, TypeScript, Styled-components, Effector.
+                  </li>
+                </ul>
+              </li>
+              <li class="experience__item">
+                <a
+                  href="https://hackathon-team3-five.vercel.app/"
+                  class="experience__link"
+                  >Shoot Children’ Scares</a
+                >
+                <ul class="experience__description">
+                  <li class="experience__text">
+                    Charity project for Hackathon in the team #3.
+                  </li>
+                  <li class="experience__text">Stack: Next.js, CSS Modules.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section education" id="education">
+          <div class="content-wrap education__content">
+            <h2 class="education__title">Education</h2>
+            <ul class="education__list">
+              <li class="education__item">
+                Murmansk Academy of Economics and Management, Murmansk
+                <ul class="education__sublist">
+                  <li class="education__text">
+                    Management, State and municipal administration
+                  </li>
+                </ul>
+              </li>
+              <li class="education__item">
+                The Rolling Scopes
+                <ul class="education__sublist">
+                  <li class="education__text">
+                    The Rolling Scopes, JS/FE Pre-School 2022Q2
+                  </li>
+                </ul>
+              </li>
+              <li class="education__item">
+                Skillbox
+                <ul class="education__sublist">
+                  <li class="education__text">
+                    Frontend Developer Profession from Zero to PRO
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section languages">
+          <div class="content-wrap languages__content">
+            <h2 class="languages__title">Languages</h2>
+            <ul class="languages__list">
+              <li class="languages__item">Russian - Native</li>
+              <li class="languages__item">English - A2</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <a
+            class="footer__link"
+            href="https://github.com/Elvira-del"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Link to Elvira-del github profile"
+            >Elvira-del</a
+          >
+          <span>&copy; 2024</span>
+          <a
+            class="footer__link"
+            href="https://rs.school/courses/javascript-ru"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Link to javascript course by RSSchool"
+          >
+            <svg class="footer__icon" width="100" height="100">
+              <use xlink:href="./assets/icon/sprite.svg#rss"></use>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
