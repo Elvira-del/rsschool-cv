@@ -16,6 +16,12 @@ body {
   line-height: 1.2;
 }
 
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -75,6 +81,14 @@ pre {
   background-color: #ffffff;
 }
 
+.subtitle {
+  margin-bottom: 1rem;
+}
+
+.content-wrap {
+  padding: 1rem;
+}
+
 .profile__content {
   display: flex;
   flex-direction: column;
@@ -100,13 +114,26 @@ pre {
   }
 }
 
+.profile__title {
+  margin-bottom: 1rem;
+}
+
+.skills__list,
+.experience__list,
+.experience__description,
+.education__list,
+.languages__list {
+  padding-left: 1rem;
+  list-style: disc;
+}
+
 .code__text {
   background-color: #eee;
   font-family: courier, monospace;
 }
 
-.content-wrap {
-  padding: 1rem;
+.experience__description {
+  list-style: circle;
 }
 
 .footer {
