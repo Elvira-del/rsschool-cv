@@ -73,10 +73,29 @@ pre {
   background-color: #ffffff;
 }
 
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .profile__content {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
 .profile__avatar {
   width: 50%;
   height: auto;
   border-radius: 50%;
+}
+
+@media (min-width: 480px) {
+  .profile__avatar {
+    width: 30%;
+  }
 }
 
 .code__text {
