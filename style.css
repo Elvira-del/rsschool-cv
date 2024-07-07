@@ -38,11 +38,12 @@ pre {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   gap: 15px;
   margin: 0 auto;
   max-width: 1440px;
+  min-height: 100%;
   width: clamp(256px, 85%, 100%);
 }
 
