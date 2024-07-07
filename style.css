@@ -9,6 +9,7 @@ html {
 
 body {
   margin: 0;
+  height: 100%;
   background-color: #2f4f4f;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -38,8 +39,8 @@ pre {
 }
 
 .container {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
   gap: 15px;
   margin: 0 auto;
   max-width: 1440px;
