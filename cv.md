@@ -19,7 +19,7 @@ I am drawn to web development because it offers limitless opportunities for prof
 
 ## Code examples
 
-```
+```javascript
  function sortArray(array) {
   const sortedResultArr = [];
   const oddArr = [];
