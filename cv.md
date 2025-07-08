@@ -22,17 +22,17 @@ I am drawn to web development because it offers limitless opportunities for prof
 ```
  function sortArray(array) {
   const sortedResultArr = [];
-  const oddArr = [];  
+  const oddArr = [];
   let idxElemOdd = 0;
-  
+
   for (let i = 0; i < array.length; i++) {
     if (array[i] % 2 !== 0) {
       oddArr.push(array[i]);
     }
-  }  
-  
-  const sortedOddArr = oddArr.sort((a, b) => a - b);  
-  
+  }
+
+  const sortedOddArr = oddArr.sort((a, b) => a - b);
+
   for (let j = 0; j < array.length; j++) {
     if (array[j] % 2 !== 0) {
       sortedResultArr.push(sortedOddArr[idxElemOdd]);
@@ -40,8 +40,8 @@ I am drawn to web development because it offers limitless opportunities for prof
     } else {
       sortedResultArr.push(array[j]);
     }
-  }  
-  
+  }
+
   return sortedResultArr;
 }
 ```
