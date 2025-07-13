@@ -1,6 +1,8 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -8,9 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+body {  
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 16px;
   background: #f6fafb;
@@ -27,13 +27,12 @@ body {
 h1,
 h2,
 h3,
-h4 {
-  margin: 0;
+h4 {  
   font-family: inherit;
 }
 
 ul,
-ol {
+ol {  
   list-style: none;
 }
 
@@ -61,9 +60,7 @@ code {
   overflow-x: auto;
 }
 
-pre::-webkit-scrollbar {
-  display: none;
-}
+
 
 .container {
   display: flex;
@@ -295,19 +292,13 @@ pre::-webkit-scrollbar {
 }
 
 .footer {
-  /* background-color: #ffffff; */
   margin-top: 18px;
   background: #f2f8fd;
   border-radius: 14px;
   box-shadow: 0 2px 8px 0 rgba(60, 110, 160, 0.04);
 }
 
-.footer__container {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem; */
+.footer__container {  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -317,10 +308,7 @@ pre::-webkit-scrollbar {
   color: #456280;
 }
 
-.footer__link {
-  /* display: inline-flex;
-  justify-content: center; */
-
+.footer__link { 
   color: #2382f7;
   font-size: 1em;
 }
@@ -329,14 +317,9 @@ pre::-webkit-scrollbar {
   text-decoration: underline;
 }
 
-.footer__icon {
-  /* width: 50%;
-  height: auto; */
-
-  .footer__icon {
-    width: 30px;
-    height: 30px;
+.footer__icon {  
+    width: 50%;
+    height: auto;
     margin-left: 6px;
-    vertical-align: middle;
-  }
+    vertical-align: middle; 
 }
